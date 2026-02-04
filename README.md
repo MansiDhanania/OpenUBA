@@ -145,29 +145,9 @@ Publication-quality plots showing feature importance and local explanations
 ## System Architecture
 
 ```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐     ┌─────────────┐
-│   Raw CERT  │────▶│   Feature    │────▶│    Data     │────▶│   Model     │
-│   Dataset   │     │  Extraction  │     │ Processing  │     │  Training   │
-└─────────────┘     └──────────────┘     └─────────────┘     └─────────────┘
-                                                                      │
-                    ┌─────────────────────────────────────────────────┘
-                    ▼
-       ┌────────────────────────┐
-       │   Trained Models       │
-       ├────────────────────────┤
-       │ • Isolation Forest     │
-       │ • Logistic Regression  │
-       │ • SVC                  │
-       │ • LSTM Autoencoder     │
-       │ • LSTM-GAN             │
-       └───────────┬────────────┘
-                   │
-        ┌──────────┴──────────┐
-        ▼                     ▼
-┌──────────────┐      ┌──────────────┐
-│     XAI      │      │   Anomaly    │
-│ (LIME/SHAP)  │      │  Detection   │
-└──────────────┘      └──────────────┘
+
+Raw CERT Dataset ────▶   Feature Extraction    ────▶    Data Processing     ────▶   Model Training     ────▶   Trained Models (Isolation Forest, Logistic Regression, SVC, LSTM Autoencoder, LSTM-GAN)   ────▶  Anomaly Detection and XAI
+
 ```
 
 ---
@@ -312,11 +292,11 @@ python evaluate.py --model trained_models/my_model.pkl --dataset day --scaler tr
 ### Dataset Overview
 
 **CERT r4.2 Insider Threat Dataset**
-- 📊 Total Records: **470,611** user activities  
-- 👥 Users Monitored: **1,000**
-- 🚨 Anomaly Rate: **~0.24%** (highly imbalanced)
-- 📅 Features: **127 behavioral features**
-- ⚖️ Train/Test Split: **70/30** (329,427 train / 141,184 test)
+- Total Records: **470,611** user activities  
+- Users Monitored: **1,000**
+- Anomaly Rate: **~0.24%** (highly imbalanced)
+- Features: **127 behavioral features**
+- Train/Test Split: **70/30** (329,427 train / 141,184 test)
 
 ### Feature Engineering
 

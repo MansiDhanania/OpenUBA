@@ -1,62 +1,24 @@
 # OpenUBA - Open Source User Behavior Analytics
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![ML](https://img.shields.io/badge/ML-Scikit--learn-orange.svg)](https://scikit-learn.org/)
-[![DL](https://img.shields.io/badge/DL-TensorFlow-orange.svg)](https://www.tensorflow.org/)
-[![XAI](https://img.shields.io/badge/XAI-SHAP%20%2B%20LIME-purple.svg)](https://github.com/slundberg/shap)
-
 > **Production-ready insider threat detection system with 99.81% accuracy**  
 > Comparative analysis of 5 ML/DL algorithms with full explainability (LIME + SHAP) on CERT r4.2 dataset
 
-An end-to-end **anomaly detection system** for insider threat detection using machine learning and explainable AI. Demonstrates expertise in ML, cybersecurity, and production-grade software engineering.
+An end-to-end **anomaly detection system** for insider threat detection using machine learning and explainable AI.
 
 ---
 
-## 🌟 Project Highlights for Recruiters
+## Key Highlights
 
-**What makes this project stand out:**
-
-1. **Real-World Impact** 🎯
-   - Solved actual cybersecurity problem (insider threat detection)
-   - Production-ready performance: 99.81% accuracy, sub-2s training
-   - Handles real-world complexity: 470K+ records, 127 features, 99.76% class imbalance
-
-2. **Technical Breadth** 🔧
-   - Implemented **5 different algorithms** from scratch (traditional ML + deep learning)
-   - Comparative analysis showing ML engineering judgment (traditional ML > DL for this use case)
-   - Full explainability with SHAP + LIME for model transparency
-
-3. **Production Engineering** 🚀
-   - Clean, modular architecture with CLI interfaces
-   - Complete MLOps pipeline: train → evaluate → explain → visualize
-   - Automated batch processing, JSON metrics, organized outputs
-
-4. **Domain Expertise** 🔒
-   - Deep understanding of cybersecurity metrics (precision vs recall trade-offs)
-   - Feature engineering from behavioral logs (127 features across multiple dimensions)
-   - Results interpretation aligned with security operations needs
-
-5. **Deliverables** 📦
-   - **5 trained models** ready for deployment
-   - **9+ XAI visualizations** for stakeholder communication
-   - **Comprehensive documentation** for team onboarding
-   - **Reproducible experiments** with full configuration management
+- Achieved **99.81% accuracy** with Logistic Regression on CERT r4.2 dataset
+- Implemented **5 ML/DL algorithms** (Isolation Forest, Logistic Regression, SVC, LSTM Autoencoder, LSTM-GAN)
+- Integrated **explainable AI** (LIME + SHAP) for model transparency
+- Processed **470K+ user activities** with 127 behavioral features
+- Trained on **329K samples**, tested on **141K samples**
+- **99.46% ROC-AUC** - excellent anomaly detection capability
 
 ---
 
-## 🎯 Key Highlights
-
-- ✅ Achieved **99.81% accuracy** with Logistic Regression on CERT r4.2 dataset
-- ✅ Implemented **5 ML/DL algorithms** (Isolation Forest, Logistic Regression, SVC, LSTM Autoencoder, LSTM-GAN)
-- ✅ Integrated **explainable AI** (LIME + SHAP) for model transparency
-- ✅ Processed **470K+ user activities** with 127 behavioral features
-- ✅ Trained on **329K samples**, tested on **141K samples**
-- ✅ **99.46% ROC-AUC** - excellent anomaly detection capability
-
----
-
-## 📊 Results & Performance
+## Results & Performance
 
 ### Model Comparison
 
@@ -64,11 +26,11 @@ All models trained on CERT r4.2 session dataset (470,611 records, 127 features):
 
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC | Training Time |
 |-------|----------|-----------|--------|----------|---------|---------------|
-| **Logistic Regression** ⭐ | **99.81%** | **69.28%** | **31.74%** | **43.53%** | **99.46%** | **1.68s** |
+| **Logistic Regression** | **99.81%** | **69.28%** | **31.74%** | **43.53%** | **99.46%** | **1.68s** |
 | **SVC** | **99.71%** | **37.16%** | **32.93%** | **34.92%** | **97.52%** | **0.67s** |
 | **Isolation Forest** | **91.43%** | **0.92%** | **32.93%** | **1.78%** | **80.66%** | **0.49s** |
-| LSTM Autoencoder | 71.57% | 25.05% | 10.69% | 14.98% | N/A | 894.78s |
-| LSTM-GAN | 69.39% | 20.00% | 8.33% | 11.76% | N/A | 310.03s |
+| **LSTM Autoencoder** | **71.57%** | 25.05% | 10.69% | 14.98% | N/A | 894.78s |
+| **LSTM-GAN** | **69.39%** | 20.00% | 8.33% | 11.76% | N/A | 310.03s |
 
 **Key Insights:**
 - **Logistic Regression** achieved the best overall performance with 99.81% accuracy and 99.46% ROC-AUC
@@ -107,7 +69,7 @@ Classification:
 
 ---
 
-## 🔬 Explainable AI (XAI)
+## Explainable AI (XAI)
 
 Understanding **why** the model flags certain behaviors as anomalous:
 
@@ -131,20 +93,14 @@ Understanding **why** the model flags certain behaviors as anomalous:
 ![SHAP LSTM-GAN](results/xai/lstm_gan_shap_session_readme_shap.png)
 *Generative model's global feature importance for anomaly scoring*
 
-**XAI Benefits:**
-- 🔍 **Interpretability**: Understand which user behaviors trigger alerts
-- 🎯 **Validation**: Verify model decisions align with security expertise
-- 📊 **Feature Discovery**: Identify previously unknown threat indicators
-- ⚖️ **Compliance**: Meet explainability requirements for security systems
-
 ---
 
-## 📦 Project Deliverables
+## Project Deliverables
 
 ### Trained Models (`trained_models/`)
 ```
 ✓ isolation_forest_session_*.pkl          (91.43% accuracy, 0.49s training)
-✓ logistic_regression_session_*.pkl       (99.81% accuracy, 1.68s training) ⭐
+✓ logistic_regression_session_*.pkl       (99.81% accuracy, 1.68s training)
 ✓ svc_session_*.pkl                       (99.71% accuracy, 0.67s training)
 ✓ lstm_autoencoder_session_*.h5           (71.57% accuracy, 894.78s training)
 ✓ lstm_gan_session_*_generator.h5         (69.39% accuracy, 310.03s training)
@@ -194,7 +150,7 @@ Publication-quality plots showing feature importance and local explanations
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────┐     ┌──────────────┐     ┌─────────────┐     ┌─────────────┐
@@ -224,7 +180,7 @@ Publication-quality plots showing feature importance and local explanations
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 OpenUBA/
@@ -281,13 +237,13 @@ OpenUBA/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/OpenUBA.git
+git clone https://github.com/MansiDhanania/OpenUBA.git
 cd OpenUBA
 
 # Install dependencies
@@ -314,14 +270,13 @@ python train.py --model lstm_autoencoder --dataset session
 # Train LSTM-GAN (Generative approach)
 python train.py --model lstm_gan --dataset session
 
-# Available datasets: session, day, week, session_time_120, session_time_240
 ```
 
 **Training Results:**
 ```
-✓ Saved model to: trained_models/logistic_regression_session_*.pkl
-✓ Saved metrics to: results/metrics/logistic_regression_session_*_metrics.json
-✓ Training completed in 1.68 seconds
+Saved model to: trained_models/logistic_regression_session_*.pkl
+Saved metrics to: results/metrics/logistic_regression_session_*_metrics.json
+Training completed in 1.68 seconds
 ```
 
 ### Generating XAI Explanations
@@ -341,9 +296,9 @@ python generate_xai_results.py
 
 **XAI Output:**
 ```
-✓ Generated: results/xai/logistic_regression_shap_session_readme_shap.png
-✓ Generated: results/xai/logistic_regression_lime_session_readme_lime.png
-✓ Completed 9 XAI explanations in ~5 minutes
+Generated: results/xai/logistic_regression_shap_session_readme_shap.png
+Generated: results/xai/logistic_regression_lime_session_readme_lime.png
+Completed 9 XAI explanations in ~5 minutes
 ```
 
 ### Evaluating Models
@@ -360,7 +315,7 @@ python evaluate.py --model trained_models/my_model.pkl --dataset day --scaler tr
 
 ---
 
-## 💡 Technical Deep Dive
+## Technical Deep Dive
 
 ### Dataset Overview
 
@@ -419,7 +374,7 @@ Extracted **127 behavioral features** across multiple dimensions:
 
 ---
 
-## 🔍 Explainable AI Integration
+## Explainable AI Integration
 
 ### SHAP (SHapley Additive exPlanations)
 
@@ -433,15 +388,9 @@ Extracted **127 behavioral features** across multiple dimensions:
 - Shows why a specific user was flagged
 - Helps security analysts understand alerts
 
-**Benefits:**
-- 🔓 **Transparency**: Understand model decisions
-- 🎯 **Trust**: Verify predictions make sense
-- 📚 **Learning**: Discover new threat patterns
-- ⚖️ **Compliance**: Meet explainability requirements
-
 ---
 
-## 📈 Usage Examples
+## Usage Examples
 
 ### Example 1: Train and Evaluate
 
@@ -487,86 +436,15 @@ MODEL_CONFIGS = {
 
 ---
 
-## 🛠️ Development
+## Performance Analysis
 
-### Project Organization
-
-The project follows a modular architecture:
-
-- **`train.py`**: CLI interface for model training
-- **`evaluate.py`**: CLI interface for model evaluation  
-- **`xai.py`**: CLI for LIME/SHAP explanations
-- **`generate_xai_results.py`**: Batch XAI generation for all models
-- **`config.py`**: Centralized configuration
-- **`src/models/`**: Model implementations (clean, reusable classes)
-- **`src/utils/`**: Data loading, preprocessing, metrics
-
-### Adding New Models
-
-1. Create model class in `src/models/your_model.py`:
-```python
-class YourModel:
-    def __init__(self, **kwargs):
-        self.model = ...
-    
-    def train(self, X_train, y_train):
-        ...
-    
-    def predict(self, X_test):
-        ...
-    
-    def save_model(self, path):
-        ...
-```
-
-2. Add to `src/models/__init__.py`:
-```python
-from src.models.your_model import YourModel
-
-def get_model(model_type, **kwargs):
-    models = {
-        'your_model': YourModel,
-        ...
-    }
-```
-
-3. Add configuration to `config.py`:
-```python
-MODEL_CONFIGS = {
-    'your_model': {
-        'param1': value1,
-        ...
-    }
-}
-```
-
----
-
-## 📊 Performance Analysis
-
-### Best Model: Logistic Regression
-
-**Why Logistic Regression excelled on this dataset:**
-- ✅ **Exceptional accuracy** (99.81%) on tabular behavioral data
-- ✅ **Fast training** (1.68 seconds) - production ready
-- ✅ **High precision** (69.28%) minimizes false alarms for security teams
-- ✅ **Excellent ROC-AUC** (99.46%) shows strong anomaly discrimination
-- ✅ **Interpretable coefficients** align with security domain knowledge
-
-**Why Traditional ML > Deep Learning Here:**
-- Tabular data with **127 features** suits classical ML better than sequential models
-- Limited temporal dependencies in aggregated session features
-- **Significantly faster training** (1.68s vs 894s for LSTM Autoencoder)
-- Better performance with less computational cost
-- Easier deployment and maintenance
-
-**Real-World Impact:**
+### Real-World Impact
 ```
 Out of 141,184 test sessions:
-  ✅ Correctly identified:   140,909 sessions (99.81%)
-  ❌ False alarms:          47 sessions (0.03% FPR)
-  ⚠️  Missed threats:        228 anomalies
-  ✓  Caught threats:        106 anomalies
+  Correctly identified:   140,909 sessions (99.81%)
+  False alarms:          47 sessions (0.03% FPR)
+  Missed threats:        228 anomalies
+  Caught threats:        106 anomalies
   
 Security Operations Impact:
   → 69% precision means 7 out of 10 alerts are actionable
@@ -580,98 +458,8 @@ Security Operations Impact:
 - Similar accuracy (99.81% vs 99.71%)
 - Logistic Regression has **2x better precision** (69% vs 37%)
 - SVC slightly faster (0.67s vs 1.68s) but less interpretable
-
-**Traditional ML vs Deep Learning:**
-- Classical ML achieved 99%+ accuracy
-- Deep learning models struggled with tabular features
-- LSTM models better suited for raw sequential logs, not aggregated features
-- 500x faster training with traditional models
+**LSTM Autoencoder and LSTM-GAN:**
+- Both models were trained only for 5 epochs and hence show poor results
+- Increasing training epochs would improve performance but increase training duration
 
 ---
-
-## 🎓 Learning Outcomes & Skills Demonstrated
-
-This project demonstrates hands-on expertise in:
-
-### Machine Learning & Data Science
-- ✅ **Algorithm Implementation**: 5 models from scratch (Isolation Forest, Logistic Regression, SVC, LSTM Autoencoder, LSTM-GAN)
-- ✅ **Model Selection**: Comparative analysis showing traditional ML outperforms DL on tabular data
-- ✅ **Hyperparameter Tuning**: Optimized for production performance (sub-2s training)
-- ✅ **Imbalanced Data**: Handled 99.76% normal vs 0.24% anomaly split
-- ✅ **Model Evaluation**: Comprehensive metrics (accuracy, precision, recall, F1, ROC-AUC, confusion matrix)
-
-### Explainable AI (XAI)
-- ✅ **SHAP Integration**: Global feature importance for all 5 models
-- ✅ **LIME Integration**: Local explanations for individual predictions
-- ✅ **Visualization**: Generated 9+ publication-quality XAI plots
-- ✅ **Interpretability**: Aligned model decisions with security domain knowledge
-
-### Data Engineering & MLOps
-- ✅ **Feature Engineering**: Extracted 127 behavioral features from raw logs
-- ✅ **Data Preprocessing**: Scaling, train/test splits, stratified sampling
-- ✅ **Pipeline Automation**: CLI tools for training, evaluation, and XAI generation
-- ✅ **Model Persistence**: Saved models, scalers, and metrics in production format
-- ✅ **Results Tracking**: JSON metrics, PNG visualizations, organized outputs
-
-### Cybersecurity
-- ✅ **Insider Threat Detection**: Real-world application on CERT dataset
-- ✅ **Behavioral Analysis**: Session patterns, file operations, network activity
-- ✅ **Anomaly Detection**: Both supervised and unsupervised approaches
-- ✅ **False Positive Reduction**: 69% precision minimizes analyst fatigue
-- ✅ **Security Metrics**: Specificity, true/false positive rates
-
-### Software Engineering
-- ✅ **Clean Architecture**: Modular, reusable code with clear separation of concerns
-- ✅ **CLI Development**: Professional argparse interfaces for all tools
-- ✅ **Configuration Management**: Centralized config.py for easy customization
-- ✅ **Documentation**: Comprehensive README, code comments, usage examples
-- ✅ **Version Control**: Git-ready with proper .gitignore and project structure
-
-### Technical Stack Proficiency
-- **Languages**: Python 3.12
-- **ML Libraries**: scikit-learn, TensorFlow, Keras
-- **XAI Tools**: SHAP, LIME
-- **Data Processing**: pandas, numpy
-- **Visualization**: matplotlib
-- **Development**: VS Code, Git, pip, requirements.txt
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- **CERT Division** for the insider threat dataset
-- **Scikit-learn** team for ML implementations
-- **TensorFlow** team for deep learning framework
-- **SHAP** and **LIME** teams for XAI tools
-
----
-
-## 📧 Contact
-
-For questions or collaboration opportunities, feel free to reach out!
-
----
-
-## 🚀 Future Enhancements
-
-Potential extensions to demonstrate continuous learning:
-
-- [ ] **Real-time Detection**: Streaming pipeline with Apache Kafka
-- [ ] **Web Dashboard**: Interactive Flask/React visualization interface
-- [ ] **Advanced Models**: Transformers, Graph Neural Networks for user relationships
-- [ ] **SIEM Integration**: Connect to Splunk/ELK for production deployment
-- [ ] **AutoML**: Automated feature selection and hyperparameter optimization
-- [ ] **Model Monitoring**: Drift detection and automated retraining
-- [ ] **Containerization**: Docker + Kubernetes for cloud deployment
-- [ ] **CI/CD Pipeline**: GitHub Actions for automated testing and deployment
-- [ ] **API Service**: REST API for model inference and management
-
----
-
-**⭐ If you find this project useful for learning ML/cybersecurity concepts, please consider giving it a star!**

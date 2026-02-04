@@ -430,6 +430,7 @@ Security Operations Impact:
 - Similar accuracy (99.81% vs 99.71%)
 - Logistic Regression has **2x better precision** (69% vs 37%)
 - SVC slightly faster (0.67s vs 1.68s) but less interpretable
+
 **LSTM Autoencoder and LSTM-GAN:**
 - Both models were trained only for 5 epochs and hence show poor results
 - Increasing training epochs would improve performance but increase training duration

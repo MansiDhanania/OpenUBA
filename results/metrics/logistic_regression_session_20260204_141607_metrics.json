@@ -1,0 +1,57 @@
+{
+    "accuracy": 0.9980521872166818,
+    "precision": 0.6928104575163399,
+    "recall": 0.31736526946107785,
+    "f1_score": 0.4353182751540041,
+    "roc_auc": 0.9946370092615622,
+    "confusion_matrix": [
+        [
+            140803,
+            47
+        ],
+        [
+            228,
+            106
+        ]
+    ],
+    "true_positives": 106,
+    "true_negatives": 140803,
+    "false_positives": 47,
+    "false_negatives": 228,
+    "specificity": 0.9996663116790913,
+    "classification_report": {
+        "normal": {
+            "precision": 0.9983833341605747,
+            "recall": 0.9996663116790913,
+            "f1-score": 0.9990244110103199,
+            "support": 140850.0
+        },
+        "anomaly": {
+            "precision": 0.6928104575163399,
+            "recall": 0.31736526946107785,
+            "f1-score": 0.4353182751540041,
+            "support": 334.0
+        },
+        "accuracy": 0.9980521872166818,
+        "macro avg": {
+            "precision": 0.8455968958384572,
+            "recall": 0.6585157905700846,
+            "f1-score": 0.717171343082162,
+            "support": 141184.0
+        },
+        "weighted avg": {
+            "precision": 0.9976604382176976,
+            "recall": 0.9980521872166818,
+            "f1-score": 0.997690847367301,
+            "support": 141184.0
+        }
+    },
+    "model_type": "logistic_regression",
+    "model_name": "logistic_regression_session_20260204_141607",
+    "dataset": "session",
+    "train_size": 329427,
+    "test_size": 141184,
+    "training_time": 1.6767840385437012,
+    "feature_count": 127,
+    "timestamp": "2026-02-04T14:16:07.965755"
+}

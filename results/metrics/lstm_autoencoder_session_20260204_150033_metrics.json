@@ -1,0 +1,56 @@
+{
+    "accuracy": 0.7157144768530908,
+    "precision": 0.25050167224080266,
+    "recall": 0.1068931068931069,
+    "f1_score": 0.14984495348604582,
+    "confusion_matrix": [
+        [
+            20648,
+            2241
+        ],
+        [
+            6258,
+            749
+        ]
+    ],
+    "true_positives": 749,
+    "true_negatives": 20648,
+    "false_positives": 2241,
+    "false_negatives": 6258,
+    "specificity": 0.9020927082878238,
+    "classification_report": {
+        "normal": {
+            "precision": 0.7674124730543374,
+            "recall": 0.9020927082878238,
+            "f1-score": 0.8293202128727784,
+            "support": 22889.0
+        },
+        "anomaly": {
+            "precision": 0.25050167224080266,
+            "recall": 0.1068931068931069,
+            "f1-score": 0.14984495348604582,
+            "support": 7007.0
+        },
+        "accuracy": 0.7157144768530908,
+        "macro avg": {
+            "precision": 0.5089570726475701,
+            "recall": 0.5044929075904654,
+            "f1-score": 0.48958258317941206,
+            "support": 29896.0
+        },
+        "weighted avg": {
+            "precision": 0.6462593428261986,
+            "recall": 0.7157144768530908,
+            "f1-score": 0.6700653579583138,
+            "support": 29896.0
+        }
+    },
+    "model_type": "lstm_autoencoder",
+    "model_name": "lstm_autoencoder_session_20260204_150033",
+    "dataset": "session",
+    "train_size": 69896,
+    "test_size": 29896,
+    "training_time": 894.7842195034027,
+    "feature_count": 128,
+    "timestamp": "2026-02-04T15:00:33.248369"
+}

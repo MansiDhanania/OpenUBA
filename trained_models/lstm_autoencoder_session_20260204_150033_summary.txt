@@ -1,0 +1,19 @@
+================================================================================
+OpenUBA Training Summary - lstm_autoencoder_session_20260204_150033
+================================================================================
+
+Model Type:      lstm_autoencoder
+Model Name:      LSTM Autoencoder
+Dataset:         session
+Training Time:   894.78 seconds
+Train Samples:   69896
+Test Samples:    29896
+Features:        128
+
+Performance Metrics:
+  Accuracy:      0.7157 (71.57%)
+  Precision:     0.2505
+  Recall:        0.1069
+  F1-Score:      0.1498
+
+Trained on:      2026-02-04 15:00:33

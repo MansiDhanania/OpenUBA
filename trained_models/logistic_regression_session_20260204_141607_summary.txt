@@ -1,0 +1,20 @@
+================================================================================
+OpenUBA Training Summary - logistic_regression_session_20260204_141607
+================================================================================
+
+Model Type:      logistic_regression
+Model Name:      Logistic Regression
+Dataset:         session
+Training Time:   1.68 seconds
+Train Samples:   329427
+Test Samples:    141184
+Features:        127
+
+Performance Metrics:
+  Accuracy:      0.9981 (99.81%)
+  Precision:     0.6928
+  Recall:        0.3174
+  F1-Score:      0.4353
+  ROC-AUC:       0.9946
+
+Trained on:      2026-02-04 14:16:07

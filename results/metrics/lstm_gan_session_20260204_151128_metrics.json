@@ -1,0 +1,56 @@
+{
+    "accuracy": 0.6938775510204082,
+    "precision": 0.2,
+    "recall": 0.08333333333333333,
+    "f1_score": 0.11764705882352941,
+    "confusion_matrix": [
+        [
+            132,
+            16
+        ],
+        [
+            44,
+            4
+        ]
+    ],
+    "true_positives": 4,
+    "true_negatives": 132,
+    "false_positives": 16,
+    "false_negatives": 44,
+    "specificity": 0.8918918918918919,
+    "classification_report": {
+        "normal": {
+            "precision": 0.75,
+            "recall": 0.8918918918918919,
+            "f1-score": 0.8148148148148148,
+            "support": 148.0
+        },
+        "anomaly": {
+            "precision": 0.2,
+            "recall": 0.08333333333333333,
+            "f1-score": 0.11764705882352941,
+            "support": 48.0
+        },
+        "accuracy": 0.6938775510204082,
+        "macro avg": {
+            "precision": 0.475,
+            "recall": 0.48761261261261263,
+            "f1-score": 0.4662309368191721,
+            "support": 196.0
+        },
+        "weighted avg": {
+            "precision": 0.6153061224489795,
+            "recall": 0.6938775510204082,
+            "f1-score": 0.6440798541638877,
+            "support": 196.0
+        }
+    },
+    "model_type": "lstm_gan",
+    "model_name": "lstm_gan_session_20260204_151128",
+    "dataset": "session",
+    "train_size": 596,
+    "test_size": 196,
+    "training_time": 310.0311813354492,
+    "feature_count": 128,
+    "timestamp": "2026-02-04T15:11:28.723963"
+}

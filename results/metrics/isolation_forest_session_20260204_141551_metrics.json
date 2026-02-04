@@ -1,0 +1,57 @@
+{
+    "accuracy": 0.9142608227561196,
+    "precision": 0.009173546826786757,
+    "recall": 0.32934131736526945,
+    "f1_score": 0.017849898580121704,
+    "roc_auc": 0.8066169896628469,
+    "confusion_matrix": [
+        [
+            128969,
+            11881
+        ],
+        [
+            224,
+            110
+        ]
+    ],
+    "true_positives": 110,
+    "true_negatives": 128969,
+    "false_positives": 11881,
+    "false_negatives": 224,
+    "specificity": 0.9156478523251687,
+    "classification_report": {
+        "normal": {
+            "precision": 0.9982661599312657,
+            "recall": 0.9156478523251687,
+            "f1-score": 0.9551738056531738,
+            "support": 140850.0
+        },
+        "anomaly": {
+            "precision": 0.009173546826786757,
+            "recall": 0.32934131736526945,
+            "f1-score": 0.017849898580121704,
+            "support": 334.0
+        },
+        "accuracy": 0.9142608227561196,
+        "macro avg": {
+            "precision": 0.5037198533790263,
+            "recall": 0.622494584845219,
+            "f1-score": 0.4865118521166477,
+            "support": 141184.0
+        },
+        "weighted avg": {
+            "precision": 0.9959262564522815,
+            "recall": 0.9142608227561196,
+            "f1-score": 0.9529563717728304,
+            "support": 141184.0
+        }
+    },
+    "model_type": "isolation_forest",
+    "model_name": "isolation_forest_session_20260204_141551",
+    "dataset": "session",
+    "train_size": 329427,
+    "test_size": 141184,
+    "training_time": 0.4879775047302246,
+    "feature_count": 127,
+    "timestamp": "2026-02-04T14:15:51.246637"
+}

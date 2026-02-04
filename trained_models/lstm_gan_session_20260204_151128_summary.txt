@@ -1,0 +1,19 @@
+================================================================================
+OpenUBA Training Summary - lstm_gan_session_20260204_151128
+================================================================================
+
+Model Type:      lstm_gan
+Model Name:      LSTM-GAN
+Dataset:         session
+Training Time:   310.03 seconds
+Train Samples:   596
+Test Samples:    196
+Features:        128
+
+Performance Metrics:
+  Accuracy:      0.6939 (69.39%)
+  Precision:     0.2000
+  Recall:        0.0833
+  F1-Score:      0.1176
+
+Trained on:      2026-02-04 15:11:28

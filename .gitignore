@@ -38,14 +38,14 @@ ENV/
 .ipynb_checkpoints
 *.ipynb
 
-# Model files (exclude from Git - too large for GitHub)
-trained_models/*.pkl
-trained_models/*.h5
-trained_models/*_scaler.pkl
+# Model files - now included (small enough for GitHub)
+# trained_models/*.pkl
+# trained_models/*.h5
+# trained_models/*_scaler.pkl
 
-# Results (exclude large files)
+# Results - XAI visualizations now included
 results/plots/*.png
-results/xai/*.png
+# results/xai/*.png
 
 # Data (exclude from Git - too large)
 ExtractedData/*.csv

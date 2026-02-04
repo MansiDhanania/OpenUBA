@@ -73,14 +73,6 @@ Classification:
 
 Understanding **why** the model flags certain behaviors as anomalous:
 
-### SHAP Feature Importance - Isolation Forest
-![SHAP Isolation Forest](results/xai/isolation_forest_shap_session_readme_shap.png)
-*Global feature importance showing which behavioral patterns most influence anomaly detection*
-
-### SHAP Feature Importance - Logistic Regression
-![SHAP Logistic Regression](results/xai/logistic_regression_shap_session_readme_shap.png)
-*Top features driving the best-performing model's predictions*
-
 ### SHAP Feature Importance - LSTM Autoencoder
 ![SHAP LSTM Autoencoder](results/xai/lstm_autoencoder_shap_session_readme_shap.png)
 *Deep learning model's learned temporal patterns for threat detection*
